@@ -1,2 +1,3 @@
 # Payments-service
-A web service project for payments 
+<h1>Project with educational purposes only</h1>
+A web service project for payments
