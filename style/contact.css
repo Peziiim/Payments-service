@@ -7,11 +7,14 @@
 
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
+  
 
   nav {
     overflow-x: hidden;
   }
+  
 @keyframes slide-in {
     from {
         transform: translateX(200px);
@@ -88,18 +91,17 @@ a:hover {
 
 .container {
     background-color: #E5D9B6;
-    width: 60vw;
+    width: 45vw;
     height: 90vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
-.container h1 {
-    font-size: 5rem;
-    width: 80%;
-    text-align: center;
+.container img {
+    height: 90vh;
+    width: 45vw;
 }
 
 .container span {
@@ -109,10 +111,11 @@ a:hover {
 
 .container-2 {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #5F8D4E;
-    width: 40vw;
+    width: 55vw;
     height: 90vh;
 }
 
@@ -124,10 +127,12 @@ form  {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    position: relative;
+    top: 150px;
+    margin-left: 55px;
     height: 90vh;
     width: 40vw;
-
     }
 
     .box h1 {
@@ -140,12 +145,13 @@ form  {
         display: flex;
         flex-direction: column-reverse;
         margin-left: 30px;
+        text-align: left;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
     }
 
     input {
         height: 37px;
-        width: 20vw;
+        width: 20rem;
         background-color: transparent;
         border: none;
         border-bottom: 2px solid rgb(204, 201, 201);
@@ -154,7 +160,14 @@ form  {
     label {
         font-size: 20px;
     }
-    
+
+    #text {
+        background-color: #E5D9B6;
+        height: 200px;
+        width: 20rem;
+        margin-top: 30px;
+    }
+
     button {
         margin-top: 30px;
         margin-left: 20px;
@@ -165,7 +178,6 @@ form  {
         background-color: #A4BE7B;
         font-weight: 800;
     }
-
 
 @media (max-width: 1180px) {
     body {
@@ -180,7 +192,7 @@ form  {
         position: absolute;
         top: 10vh;
         right: 0;
-        width: 40vw;
+        width: 30vw;
         height: 50vh;
         background: #285430;
         flex-direction: column;
@@ -222,8 +234,7 @@ form  {
         }
 
         .container {
-            width: 100vw;
-            height: 100vh;
+            display: none;
         }
 
         .container h1, .container span {
@@ -235,16 +246,10 @@ form  {
         }
 
         .container-2 {
-            align-items: start;
             width: 100vw;
-            height: 100vh;
         }
 
-        input {
-            width: 80vw;
-        }
-
-        button {
-            margin-top: 30px;
+        form {
+            margin-left: 0;
         }
 }
