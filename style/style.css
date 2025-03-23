@@ -3,15 +3,14 @@
     margin: 0;
     animation-name: slide-in;
     animation-duration: 1s;
+    box-sizing: border-box;
 }
 
-body {
+html, body, header, nav, .nav-list {
     overflow-x: hidden;
-  }
+}
 
-  nav {
-    overflow-x: hidden;
-  }
+
 @keyframes slide-in {
     from {
         transform: translateX(200px);
@@ -48,6 +47,7 @@ a:hover {
 #header {
     background-color: #285430;
     height: 10vh;
+    overflow: hidden;
 }
 
 .nav-bar {
@@ -56,6 +56,8 @@ a:hover {
     align-items: center;
     font-family: system-ui, system-ui, -apple-system, Helvetica, sans-serif;
     height: 10vh;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .nav-list {
@@ -94,6 +96,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .container h1 {
@@ -114,6 +117,7 @@ a:hover {
     background-color: #5F8D4E;
     width: 40vw;
     height: 90vh;
+    overflow: hidden;
 }
 
 .box {
@@ -175,6 +179,9 @@ form  {
       .logo {
         font-size: 1.3rem;
       }
+      .wrapper {
+        overflow-x: hidden;
+      }
 
       .nav-list {
         position: absolute;
@@ -218,16 +225,19 @@ form  {
         #title {
             flex-direction: column;
             align-items: normal;
-            width: 100vw;
+            width: 100%;
+            overflow: hidden;
         }
 
+
         .container {
-            width: 100vw;
+            width: 100%;
             height: 100vh;
+            overflow: hidden;
         }
 
         .container h1, .container span {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
         }
 
         .container h2 {
@@ -236,12 +246,16 @@ form  {
 
         .container-2 {
             align-items: start;
-            width: 100vw;
+            width: 100%;
             height: 100vh;
         }
 
         input {
             width: 80vw;
+        }
+
+        .inputbox {
+            margin-bottom: 20px;
         }
 
         button {
